@@ -1,0 +1,92 @@
+:root {
+  /* == COLOURS === */
+  --clr-primary: rgba(255, 107, 130, 1);
+  --clr-line: rgba(200, 200, 200, 1);
+  --clr-white: rgba(255, 255, 255, 1);
+  --clr-text: rgba(0, 0, 0, 1);
+
+  /* FONT WEIGHT */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  /* TYPOGRAPHY */
+  --font-family: "Inter", sans-serif;
+  --font-base-size: 10px;
+  --min-width: 320px;
+
+  /*=== Z-INDEX   === */
+  --z-index-inherit: 1;
+  --z-index-negative: -1;
+  --z-index-99: 99;
+  --z-index-999: 999;
+
+  /* MARGIN AND PADDING */
+  --checkbox-d: 0.8rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: var(--font-base-size);
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+span,
+p {
+  font-weight: var(--font-weight-regular);
+}
+
+span,
+p {
+  font-size: 1.2rem;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--clr-text);
+  background-color: var(--clr-white);
+  min-width: var(--min-width);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.432;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
